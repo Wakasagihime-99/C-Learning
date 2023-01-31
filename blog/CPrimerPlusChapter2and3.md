@@ -25,10 +25,10 @@ C语言概述学习记录及疑问
 ## 一些表格
 
 转义序列表
-![Alt text](.\picture\转义序列.png)
+![Alt text](picture/转义序列.png)
 
 int类型写法
-![Alt text](.\picture\int类型写法.png)
+![Alt text](picture/int类型写法.png)
 
 float和double位数问题
 
@@ -39,12 +39,12 @@ double：不同系统将多余的32位分配给指数还是尾数不太一样，
 long double：只保证至少比double精度高。
 
 表格看看就可以，引自<https://blog.csdn.net/KLFTESPACE/article/details/81150481>
-![Alt text](.\picture\float&double.png)
+![Alt text](picture/float&double.png)
 
 ## 浮点数舍入错误
 
 例子如下：
-![Alt text](.\picture\浮点数错误.png)
+![Alt text](picture/浮点数错误.png)
 **分析：**
 
 - 二进制小数转换

@@ -4,7 +4,7 @@
 
 ## 使用C语言的7个步骤
 
-![Alt text](.\picture\7steps.png)
+![Alt text](picture/7steps.png)
 
 1. **定义程序目标：** 明确你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息。不涉及具体的计算机语言。
 2. **设计程序：** 考虑如何使用程序完成它，如何在程序中表示数据，用什么方法处理数据等。使用一般的术语描述问题。
@@ -16,15 +16,15 @@
 
 ## 编译过程
 
-![Alt text](.\picture\CompilerandLinker.png)
+![Alt text](picture/CompilerandLinker.png)
 
 1. 预处理：将所有头文件及宏定义转换成真正内容。使用命令``gcc -E HelloWorld.c -o HelloWorld.i``获得HelloWorld.i文件。如图所示，头文件被替换。
 
-![Alt text](.\picture\preprocessing.png)
+![Alt text](picture/preprocessing.png)
 
 1. 编译：将预处理文件变为汇编代码。
 
-![Alt text](.\picture\ASM.png)
+![Alt text](picture/ASM.png)
 
 1. 汇编：将上一步中的汇编代码转为机器码，这一步产生的文件叫目标文件。打开o文件，VS将提示此文件是二进制文件或使用了不支持的文本编码，无法在编辑器中显示。
 2. 链接：将多个目标文件及所需的库文件链接成最终可执行文件。
