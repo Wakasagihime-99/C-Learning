@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <complex.h>
 
 int main()
 {
-    float salary = 256.0;
-
-    printf("%lf", salary);
-
+    int a, b, c, max;
+    scanf("%d %d %d", &a, &b, &c);
+    printf("");
     return 0;
 }
