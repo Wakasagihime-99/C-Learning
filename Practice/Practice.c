@@ -2,8 +2,9 @@
 
 int main()
 {
-    int a, b, c, max;
-    scanf("%d %d %d", &a, &b, &c);
-    printf("");
+    int test = 10;
+    double aim;
+    aim = test;
+    printf("%f", aim);
     return 0;
 }
