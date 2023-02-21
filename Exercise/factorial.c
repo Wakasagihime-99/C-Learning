@@ -1,11 +1,10 @@
 /*
- * @Date: 2023-02-12
+ * @Date: 2023-02-20
  * @LastEditors: Wakasagihime
  * @LastEditTime: 2023-02-20
- * @FilePath: \c\Exercise\Easy.c
- * @Description: 简单题，不保留代码。
+ * @FilePath: \c\Exercise\factorial.c
+ * @Description: 阶乘计算
  */
-
 #include <stdio.h>
 
 long long fac(int num);
@@ -33,3 +32,5 @@ long long fac(int num)
     else
         return num * fac(num - 1);
 }
+
+// 没初始化sum造成的一系列错误……

@@ -1,22 +1,30 @@
 /*
  * @Date: 2023-02-07
  * @LastEditors: Wakasagihime
- * @LastEditTime: 2023-02-09
+ * @LastEditTime: 2023-02-21
  * @FilePath: \c\Practice\Practice.c
- * @Description:
+ * @Description: 学习时测试用代码
  */
 #include <stdio.h>
-#include <stdbool.h>
 
 int main()
 {
-    int test = 10;
-    double aim;
-    aim = test;
-    int res;
-    bool input_isgood;
-    res = scanf("%d", &test);
-    printf("%f", aim);
-    char c;
-    c = ' ';
+    int count = 2;
+    char ch;
+    char x = 'a';
+
+    while(count--)
+    {
+        ch = getchar();
+        switch (ch)
+        {
+        case 'a':
+            printf("耶");
+            continue;
+
+        default:
+            break;
+        }
+        printf("test");
+    }
 }

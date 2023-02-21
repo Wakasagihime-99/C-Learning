@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-02-07
  * @LastEditors: Wakasagihime
- * @LastEditTime: 2023-02-12
+ * @LastEditTime: 2023-02-21
  * @FilePath: \c\blog\CPrimerPlusChapter6&7.md
  * @Description: 
 -->
@@ -101,3 +101,74 @@ int main(void)
 ![Alt text](picture/ctype测试函数.png)
 注意：映射不会改变参数本身的值。
 ![Alt text](picture/ctype映射函数.png)
+
+## 其他个人注意的点
+
+1. 条件运算符(?)是c语言唯一的三元运算符。我其实判断条件不写问号，但为了表达清晰还是写比较好。
+2. goto应避免使用！但书中写了一个可以接受的例子如下：
+
+```c
+while (funct > 0)
+{
+    for (i = 1; i < 100; i++)
+    {
+        for (j = 1; j < 100; j++)
+        {
+            其他语句
+            if (问题)
+                goto help;
+            其他语句
+        }
+        其他语句
+    }
+    其他语句
+}
+其他语句
+help: 语句
+```
+
+为什么：因break等只能跳出一层循环，出现问题时跳出全部循环可用goto。
+
+## continue和break
+
+1. 执行到continue时，会跳过本次循环的剩余部分，直接开始下一轮循环。如果是嵌套循环则只影响内层循环。相比if-else格式好处是减少缩进、简洁、提高代码可读性。还有一个用法是空句改为continue会可读性更高，如
+
+    ```c
+    while(getchar() != '\n')
+        ;
+    ```
+
+    改为
+
+    ```c
+    while(getchar() != '\n')
+        continue;
+    ```
+
+2. continue对while和for循环的区别不要搞混，判断完for条件后还会继续执行expression3，如递增递减。
+3. break：直接跳出当前循环，若有嵌套循环则只影响内层。
+4. 多重选择：
+
+    ```c
+    switch(ch)
+    {
+        case 'a':
+            /* expression */
+            //注意：无需括号
+            break;
+        case 'b':
+        case 'c':
+            /* expression */
+            //注意：此处b、c为多重标签，执行同样的命令。
+            break;
+        default:
+            /* expression */
+            //其实无需break但是最好写上
+    }
+    ```
+
+    若标签中遗落break，则会从匹配的那一行开始一直执行到末尾。注意图中不是运行完2直接去运行default，而是把3也运行了。
+    ![Alt text](picture/switch有无break情况.png)
+
+5. switch并不算一个循环，如果在其中使用continue不会发生任何事。除非整个switch在一个循环内，则continue会跳到循环处。
+6. switch注意事项：标签只可以是整形常量（包括char）,不可以是变量。
