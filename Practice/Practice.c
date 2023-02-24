@@ -1,30 +1,38 @@
 /*
  * @Date: 2023-02-07
  * @LastEditors: Wakasagihime
- * @LastEditTime: 2023-02-21
- * @FilePath: \c\Practice\Practice.c
+ * @LastEditTime: 2023-02-24
+ * @FilePath: \\pythond:\\code\\c\\Practice\\Practice.c
  * @Description: 学习时测试用代码
  */
+
 #include <stdio.h>
 
+void shabi(int a);
 int main()
 {
-    int count = 2;
-    char ch;
-    char x = 'a';
+    int a = 1;
 
-    while(count--)
+    if (a == 1)
     {
-        ch = getchar();
-        switch (ch)
-        {
-        case 'a':
-            printf("耶");
-            continue;
-
-        default:
-            break;
-        }
-        printf("test");
+        int b = 1;
     }
+    else
+    {
+        int c = 1;
+    }
+
+    return 0;
+}
+
+void shabi(int a)
+{
+    int b, c;
+
+    if (a == 1)
+        b = 1;
+    else
+        c = 1;
+
+    return 0;
 }
