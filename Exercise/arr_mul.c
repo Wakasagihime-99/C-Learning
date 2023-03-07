@@ -1,11 +1,10 @@
 /*
- * @Date: 2023-02-12
+ * @Date: 2023-03-03
  * @LastEditors: Wakasagihime
  * @LastEditTime: 2023-03-03
- * @FilePath: \\pythond:\\code\\c\\Exercise\\Easy.c
- * @Description: 简单题，不保留代码。
+ * @FilePath: \\pythond:\\code\\c\\Exercise\\arr_mul.c
+ * @Description:矩阵乘法（多元指针练习）
  */
-
 #include <stdio.h>
 
 void arr_mul(int n, int m, int k, const int A[][m], const int B[][k], int mul[][k]);
@@ -49,5 +48,4 @@ void arr_mul(int n, int m, int k, const int A[][m], const int B[][k], int mul[][
             for (l = 0; l < m; l++)
                 mul[i][j] += A[i][l] * B[l][j];
         }
-            
 }
