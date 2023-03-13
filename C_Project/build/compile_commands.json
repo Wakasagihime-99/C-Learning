@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/code/c/C_Project/build",
+  "command": "D:\\software\\x86_64-12.2.0-release-win32-seh-ucrt-rt_v10-rev2\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\Demo.dir\\hello.c.obj -c D:\\code\\c\\C_Project\\hello.c",
+  "file": "D:/code/c/C_Project/hello.c"
+},
+{
+  "directory": "D:/code/c/C_Project/build",
+  "command": "D:\\software\\x86_64-12.2.0-release-win32-seh-ucrt-rt_v10-rev2\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\Demo.dir\\var.c.obj -c D:\\code\\c\\C_Project\\var.c",
+  "file": "D:/code/c/C_Project/var.c"
+}
+]

@@ -1,0 +1,15 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Demo.dir/hello.c.obj"
+  "CMakeFiles/Demo.dir/hello.c.obj.d"
+  "CMakeFiles/Demo.dir/var.c.obj"
+  "CMakeFiles/Demo.dir/var.c.obj.d"
+  "Demo.exe"
+  "Demo.exe.manifest"
+  "Demo.pdb"
+  "libDemo.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/Demo.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
