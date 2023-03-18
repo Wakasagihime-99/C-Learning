@@ -1,16 +1,30 @@
 /*
  * @Date: 2023-03-13
- * @LastEditors: error: git config user.name & please set dead value or install git
- * @LastEditTime: 2023-03-13
- * @FilePath: \\C_Projectd:\\code\\c\\C_Project\\hello.c
+ * @LastEditors: Wakasagihime
+ * @LastEditTime: 2023-03-18
+ * @FilePath: \\C_Project\\hello.c
  * @Description:
  */
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-    extern int die;
 
-    printf("hello\n");
-    printf("%d", die);
+    char buff[1024];
+
+    memset(buff, '\0', sizeof(buff));
+
+    fprintf(stdout, "启用全缓冲\n");
+    setvbuf(stdout, buff, _IOFBF, 1024);
+
+    fprintf(stdout, "这里是 runoob.com\n");
+    fprintf(stdout, "该输出将保存到 buff\n");
+    fflush(stdout);
+
+    fprintf(stdout, "这将在编程时出现\n");
+    fprintf(stdout, "最后休眠五秒钟\n");
+    fflush(stdout);
+
+    return (0);
 }
